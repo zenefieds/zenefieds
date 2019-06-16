@@ -36,3 +36,5 @@ const data = [
         owner: 'Kevin'
     },
 ]
+
+export default data;

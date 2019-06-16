@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
+import ItemCard from '../Item_Card/ItemCard.js';
 
 class MyActivity extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
     }
   }
   render() {
     return (
       <div className="MyActivity">
-        My Activity
+        {this.props.items.map((item) => {
+            return <ItemCard item = {item}/>
+        })}
       </div>
     );
   }
