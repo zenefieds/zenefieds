@@ -1,0 +1,14 @@
+.NavBar {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(18, 52, 102, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ButtonText {
+    margin: 2% 4% 2% 2%;
+    font-family: Circular Std;
+    font-size: 14px;
+    line-height: 16px;
+}

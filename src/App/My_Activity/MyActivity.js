@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ItemCard from '../Item_Card/ItemCard.js';
+import './MyActivity.css';
 
 class MyActivity extends Component {
   constructor(props) {
@@ -10,8 +11,8 @@ class MyActivity extends Component {
   render() {
     return (
       <div className="MyActivity">
-        {this.props.items.map((item) => {
-            return <ItemCard item = {item}/>
+        {this.props.items.map((item, i) => {
+            return <ItemCard key = {i} item = {item}/>
         })}
       </div>
     );

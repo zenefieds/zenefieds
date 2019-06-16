@@ -9,7 +9,8 @@ const data = [
         state: 'CA',
         category: 'Clothing & Accessories',
         status: 'active',
-        owner: 'Shujian'
+        owner: 'Shujian',
+        date: '3 days ago'
     },
     {
         title: 'My old left sock',
@@ -21,7 +22,8 @@ const data = [
         state: 'AZ',
         category: 'Clothing & Accessories',
         status: 'active',
-        owner: 'Kevin'
+        owner: 'Kevin',
+        date: '2 days ago'
     },
     {
         title: 'Stuffed animal',
@@ -33,7 +35,8 @@ const data = [
         state: 'CA',
         category: 'Misc',
         status: 'active',
-        owner: 'Kevin'
+        owner: 'Kevin',
+        date: 'Yesterday'
     },
 ]
 
