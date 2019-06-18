@@ -6,8 +6,15 @@
     text-align: center;
 }
 
-.ButtonText {
-    margin: 2% 4% 2% 2%;
+.BrowseButton {
+    margin: 16px 0 16px 136px;
+    font-family: Circular Std;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.ActivityButton {
+    margin: 16px 0 16px 36px;
     font-family: Circular Std;
     font-size: 14px;
     line-height: 16px;
