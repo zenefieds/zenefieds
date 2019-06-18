@@ -1,0 +1,1 @@
+if we want to demo the 'add a new feature', how will we do it with the pictures being a combined pic? Right now we are just using URLs
