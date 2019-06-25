@@ -10,8 +10,14 @@ class NavBar extends Component {
     render() {
         return (
           <div className='NavBar'>
-            <div className = 'BrowseButton' onClick = {this.props.togglePages}>Browse</div>
-            <div className = 'ActivityButton' onClick = {this.props.togglePages}>Activity</div>
+            <div className='TopRow'>
+              <div className = 'BrowseButton' onClick = {this.props.togglePages}>Browse</div>
+              <div className = 'ActivityButton' onClick = {this.props.togglePages}>Activity</div>
+            </div>
+            <div className='BottomRow'>
+              <div className = 'BrowseButtonBlock'></div>
+              <div className = 'ActivityButtonBlock'></div>
+            </div>
           </div>
         );
     }

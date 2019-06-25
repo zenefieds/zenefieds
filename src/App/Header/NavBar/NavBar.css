@@ -1,13 +1,20 @@
 .NavBar {
     background: #FFFFFF;
     box-shadow: 0px 2px 6px rgba(18, 52, 102, 0.1);
-    display: flex;
     align-items: center;
     text-align: center;
 }
 
+.TopRow {
+    display: flex;
+}
+
+.BottomRow {
+    display: flex;
+}
+
 .BrowseButton {
-    margin: 16px 0 16px 136px;
+    margin: 16px 0 16px 134px;
     font-family: Circular Std;
     font-size: 14px;
     line-height: 16px;
@@ -18,4 +25,18 @@
     font-family: Circular Std;
     font-size: 14px;
     line-height: 16px;
+}
+
+.BrowseButtonBlock{
+    height: 4px;
+    width: 58px;
+    background: #FF5745;
+    margin-left: 132px;
+}
+
+.ActivityButtonBlock{
+    height: 4px;
+    width: 58px;
+    background: #FF5745;
+    margin-left: 20px;
 }
