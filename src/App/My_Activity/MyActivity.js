@@ -13,13 +13,13 @@ class MyActivity extends Component {
     return (
       <div className="MyActivity">
         <h1>Draft Listings</h1>
-        <Browse items = {this.props.items.filter(item => item.status === 'draft')} />
+        <Browse items = {this.props.items.filter(item => item.status === 'draft')} openItemDescription = {this.props.openItemDescription}/>
         <hr className = 'Horizontal-Line'/>
         <h1>Active Listings</h1>
-        <Browse items = {this.props.items.filter(item => item.status === 'active')} />
+        <Browse items = {this.props.items.filter(item => item.status === 'active')} openItemDescription = {this.props.openItemDescription}/>
         <hr className = 'Horizontal-Line'/>
         <h1>Inactive Listings</h1>
-        <Browse items = {this.props.items.filter(item => item.status === 'inactive')} />
+        <Browse items = {this.props.items.filter(item => item.status === 'inactive')} openItemDescription = {this.props.openItemDescription}/>
       </div>
     );
   }
