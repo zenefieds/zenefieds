@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './AddItem.css';
+import closeButtonImage from './close-button.png';
 
 class AddItem extends Component {
   constructor(props) {
@@ -79,18 +80,24 @@ class AddItem extends Component {
     e.preventDefault();
   }
 
+
   render() {
     return (
-      <div className="AddItem">
+      <div className='Add-Item'>
+        <div className='Add-Item-Container'>
+          <div className = 'Item-Description-Close-Button' onClick = {this.props.closeAddItem}>
+              <img className = 'Item-Description-Close-Button-Image' src = {closeButtonImage} />
+          </div>
           <form onSubmit ={e => this.submitNewItem(e)}>
-              <div><p>title: </p><input type='text' value = {this.state.title} onChange = {this.titleChange}></input></div>
-              <div><p>description: </p><input type='text' value = {this.state.description} onChange = {this.descriptionChange}></input></div>
-              <div><p>photos: </p><input type='text' value = {this.state.photoURL} onChange = {this.photosChange}></input><button onClick = {this.addPhoto}>Add Another Photo</button></div>
-              <div><p>price: </p><input type='number' value = {this.state.price} onChange = {this.priceChange}></input></div>
-              <div><p>area: </p><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div>
-              <div><p>category: </p><input type='text' value = {this.state.category} onChange = {this.categoryChange}></input></div>
-              <div><input type = 'submit' value = 'Submit'/></div>
+            <div><p>title: </p><input type='text' value = {this.state.title} onChange = {this.titleChange}></input></div>
+            <div><p>description: </p><input type='text' value = {this.state.description} onChange = {this.descriptionChange}></input></div>
+            <div><p>photos: </p><input type='text' value = {this.state.photoURL} onChange = {this.photosChange}></input><button onClick = {this.addPhoto}>Add Another Photo</button></div>
+            <div><p>price: </p><input type='number' value = {this.state.price} onChange = {this.priceChange}></input></div>
+            <div><p>area: </p><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div>
+            <div><p>category: </p><input type='text' value = {this.state.category} onChange = {this.categoryChange}></input></div>
+            <div><input type = 'submit' value = 'Submit'/></div>
           </form>
+        </div>
       </div>
     );
   }
