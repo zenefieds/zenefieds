@@ -4,7 +4,8 @@ import './ItemDescription.css';
 import emailImage from './email.png';
 import payPalImage from './PayPal.png';
 import slackImage from './slack.png';
-import venmoImage from './Venmo.png'
+import venmoImage from './Venmo.png';
+import closeButtonImage from './close-button.png';
 
 const ItemDescription = (props) => {
     console.log(props.item);
@@ -50,7 +51,9 @@ const ItemDescription = (props) => {
                 <div>
                     <div className = 'Item-Description-Close-Window-Container'>
                         <p className = 'Item-Description-Small-Text'>{props.item.category}</p>
-                        <button className = 'Item-Description-Close-Button' onClick = {props.closeItemDescription}>close</button>
+                        <div className = 'Item-Description-Close-Button' onClick = {props.closeItemDescription}>
+                            <img className = 'Item-Description-Close-Button-Image' src = {closeButtonImage} />
+                        </div>
                     </div>
                     <p className = 'Item-Description-Item-Title'>{props.item.title}</p>
                     <div className = 'Item-Description-Seller-Info'>
