@@ -10,7 +10,7 @@ class Browse extends Component {
   }
   render() {
     return (
-      <div className="Browse">
+      <div className="Browse cardContainer">
         {this.props.items.map((item, i) => {
             return <ItemCard key = {i} item = {item} />
         })}
