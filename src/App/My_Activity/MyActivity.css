@@ -1,0 +1,11 @@
+.MyActivity > h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 19px;
+    line-height: 28px;
+    align-items: center;
+}
+
+.Horizontal-Line {
+    width: 60%;
+    opacity: .5;
+}
