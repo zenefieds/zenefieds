@@ -60,11 +60,11 @@ class AddItem extends Component {
       title: this.state.title,
       description: this.state.description,
       photos: this.state.photos,
-      price: 80,
-      area: 'CA',
-      category: 'Clothing & Accessories',
+      price: this.state.price,
+      area: this.state.area,
+      category: this.state.category,
       status: 'active',
-      owner: 'Shujian',
+      owner: this.state.owner,
     }
     this.props.addNewItem(item);
     this.setState({
