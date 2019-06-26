@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import headerImage from './HeaderImage.png';
-import NavBar from './NavBar/NavBar.js';
+import ReturnNav from './NavBar/NavBar.js';
 import './Header.css';
 
 class Header extends Component {
@@ -13,7 +13,7 @@ class Header extends Component {
         return (
           <div>
             <img className = 'HeaderImage' src = {headerImage}></img>
-            <NavBar togglePages = {this.props.togglePages}/>
+            <ReturnNav goToBrowse = {this.props.goToBrowse} goToMyActivity = {this.props.goToMyActivity} currentPage = {this.props.currentPage}/>
           </div>
         );
     }
