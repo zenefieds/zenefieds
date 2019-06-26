@@ -27,16 +27,24 @@
     line-height: 16px;
 }
 
+.BrowseButton:hover {
+    cursor: pointer;
+}
+
+.ActivityButton:hover {
+    cursor: pointer;
+}
+
 .BrowseButtonBlock{
     height: 4px;
     width: 58px;
     background: #FF5745;
-    margin-left: 132px;
+    margin-left: 127px;
 }
 
 .ActivityButtonBlock{
     height: 4px;
     width: 58px;
     background: #FF5745;
-    margin-left: 20px;
+    margin-left: 207px;
 }

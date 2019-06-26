@@ -13,7 +13,7 @@ class Header extends Component {
         return (
           <div>
             <img className = 'HeaderImage' src = {headerImage}></img>
-            <ReturnNav togglePages = {this.props.togglePages}/>
+            <ReturnNav goToBrowse = {this.props.goToBrowse} goToMyActivity = {this.props.goToMyActivity} currentPage = {this.props.currentPage}/>
           </div>
         );
     }

@@ -4,6 +4,7 @@ import Browse from './Browse/Browse.js';
 import MyActivity from './My_Activity/MyActivity.js';
 import AddItem from './Add_Item/AddItem.js';
 import data from '../data.js';
+import ItemDescription from './Item_Description/ItemDescription.js';
 import './App.css';
 
 class App extends Component {
@@ -15,20 +16,21 @@ class App extends Component {
       items: data,
       addingItem: false,
     }
-    this.togglePages = this.togglePages.bind(this);
+    this.goToBrowse = this.goToBrowse.bind(this);
+    this.goToMyActivity = this.goToMyActivity.bind(this);
     this.addNewItem = this.addNewItem.bind(this);
     this.toggleSellItem = this.toggleSellItem.bind(this);
   }
-  togglePages() {
-    if(this.state.page === 'Browse') {
-      this.setState({
-        page: 'MyActivity'
-      })
-    } else {
-      this.setState({
-        page: 'Browse'
-      })
-    }
+  goToBrowse() {
+    this.setState({
+      page: 'Browse'
+    })
+  }
+
+  goToMyActivity() {
+    this.setState({
+      page: 'MyActivity'
+    })
   }
 
   addNewItem(item) {
@@ -47,11 +49,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header togglePages = {this.togglePages}/>
+        <Header goToBrowse = {this.goToBrowse} goToMyActivity = {this.goToMyActivity} currentPage = {this.state.page}/>
         <button onClick = {this.toggleSellItem}>Sell Something</button>
         {this.state.addingItem ? <AddItem addNewItem = {this.addNewItem}/> : null}
         {this.state.page === 'Browse' ? <Browse items = {this.state.items}/> : null}
         {this.state.page === 'MyActivity' ? <MyActivity items = {this.state.items.filter(item => item.owner === this.state.user)}/> : null}
+        <ItemDescription item = {this.state.items[0]}/>
       </div>
     );
   }
