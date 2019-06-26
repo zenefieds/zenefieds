@@ -15,11 +15,13 @@ class App extends Component {
       page: 'Browse',
       items: data,
       addingItem: false,
+      viewingItem: true,
     }
     this.goToBrowse = this.goToBrowse.bind(this);
     this.goToMyActivity = this.goToMyActivity.bind(this);
     this.addNewItem = this.addNewItem.bind(this);
     this.toggleSellItem = this.toggleSellItem.bind(this);
+    this.closeItemDescription = this.closeItemDescription.bind(this);
   }
   goToBrowse() {
     this.setState({
@@ -46,6 +48,12 @@ class App extends Component {
     this.setState({addingItem: true})
   }
 
+  closeItemDescription(){
+    this.setState({
+      viewingItem: false,
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -54,7 +62,7 @@ class App extends Component {
         {this.state.addingItem ? <AddItem addNewItem = {this.addNewItem}/> : null}
         {this.state.page === 'Browse' ? <Browse items = {this.state.items}/> : null}
         {this.state.page === 'MyActivity' ? <MyActivity items = {this.state.items.filter(item => item.owner === this.state.user)}/> : null}
-        <ItemDescription item = {this.state.items[0]}/>
+        {this.state.viewingItem ? <ItemDescription item = {this.state.items[0]} closeItemDescription = {this.closeItemDescription}/> : null}
       </div>
     );
   }

@@ -1,3 +1,15 @@
+.Item-Description-Background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
 .Item-Description-Container {
     display: flex;
     position: absolute;
@@ -24,8 +36,19 @@
     display: flex;
 }
 
+.Item-Description-Seller-Info-Separator {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-family: 'Maven Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #636B71;
+}
+
 .Item-Description-Small-Text {
-    font-family: 'Maven Pro';
+    font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -34,23 +57,25 @@
 }
 
 .Item-Description-Item-Title {
-    font-family: 'Maven Pro';
+    font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 34px;
+    margin: 0 0 0 0
 }
 
 .Item-Description-Price {
-    font-family: 'Maven Pro';
+    font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 34px;
+    margin: 15px 0 15px 0;
 }
 
 .Item-Description-Header {
-    font-family: 'Maven Pro';
+    font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -59,6 +84,7 @@
 
 .Item-Description-Images-Container {
     display: flex;
+    margin-bottom: 25px;
 }
 
 .Item-Description-Left-Image {
@@ -76,8 +102,8 @@
     height: 32px;
     background-color: #F25341;
     border-radius: 1px;
-    box-shadow: 0px 0px 0px rbga(18,52,102,0.1);
-    margin: 12px 5px auto auto;
+    box-shadow: 0px 0px 0px;
+    margin: 12px 10px auto auto;
     text-align: center;
     line-height: 32px;
     font-family: 'Circular Std';
@@ -97,7 +123,7 @@
 }
 
 .Item-Description-Q-A-Text-Container > h1{
-    font-family: 'Maven Pro';
+    font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -109,11 +135,19 @@
 }
 
 .Item-Description-Q-and-A-Single-Question p {
-    font-family: Circular Std;
+    font-family: 'Maven Pro', sans-serif;
     font-size: 14px;
     line-height: 21px;
 }
 
 .Item-Description-Q-and-A-Spacer {
     width: 90px;
+}
+
+.Item-Description-Close-Window-Container {
+    display: flex;
+}
+
+.Item-Description-Close-Button {
+    margin-right: auto;
 }
