@@ -8,16 +8,20 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
+    overflow: auto;
 }
 
 .Item-Description-Container {
     display: flex;
     position: absolute;
     width: 70%;
-    min-width: 0;
-    left: 107px;
-    top: 0;
-    
+    min-width: 700px;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
     background: #FFFFFF;
     border: 1px solid #D6DEE9;
     border-radius: 3px;
@@ -25,10 +29,11 @@
 
 .Item-Description-Left-Container {
     margin: 10px 20px 0 10px;
+    width: 70%;
 }
 
 .Item-Description-Image > img {
-    width: 600px;
+    width: 100%;
     height: auto;
 }
 
@@ -149,5 +154,19 @@
 }
 
 .Item-Description-Close-Button {
-    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5px;
+    padding-top: 5px;
+    height: 15px;
+    width: 15px;
+}
+
+.Item-Description-Close-Button:hover {
+    cursor: pointer;
+}
+
+.Item-Description-Close-Button-Image {
+    height: 12px;
+    width: auto;
+    opacity: 0.5;
 }
