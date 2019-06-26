@@ -14,9 +14,9 @@
     display: flex;
     position: absolute;
     width: 70%;
-    min-width: 1000px;
+    min-width: 0;
     left: 107px;
-    top: 31px;
+    top: 0;
     
     background: #FFFFFF;
     border: 1px solid #D6DEE9;
