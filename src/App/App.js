@@ -34,7 +34,7 @@ class App extends Component {
   }
 
   addNewItem(item) {
-    let newData = this.state.data;
+    let newData = this.state.items;
     newData.push(item);
     this.setState({
       items: newData,

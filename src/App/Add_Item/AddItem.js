@@ -21,6 +21,7 @@ class AddItem extends Component {
     this.priceChange = this.priceChange.bind(this);
     this.areaChange = this.areaChange.bind(this);
     this.categoryChange = this.categoryChange.bind(this);
+    this.submitNewItem = this.submitNewItem.bind(this);
   }
 
   titleChange(e) {
@@ -51,11 +52,10 @@ class AddItem extends Component {
     this.setState({category: e.target.value})
   }
 
-  submitNewItem(e) {
+  submitNewItem = (e) => {
     if (this.state.photoURL !== '') {
-      this.addPhoto()
+      this.addPhoto(e)
     }
-    console.log(this.state.photos);
     const item = {
       title: this.state.title,
       description: this.state.description,
@@ -82,7 +82,7 @@ class AddItem extends Component {
   render() {
     return (
       <div className="AddItem">
-          <form onSubmit = {this.submitNewItem}>
+          <form onSubmit ={e => this.submitNewItem(e)}>
               <div><p>title: </p><input type='text' value = {this.state.title} onChange = {this.titleChange}></input></div>
               <div><p>description: </p><input type='text' value = {this.state.description} onChange = {this.descriptionChange}></input></div>
               <div><p>photos: </p><input type='text' value = {this.state.photoURL} onChange = {this.photosChange}></input><button onClick = {this.addPhoto}>Add Another Photo</button></div>
