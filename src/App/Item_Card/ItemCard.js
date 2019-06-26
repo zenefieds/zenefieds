@@ -5,7 +5,7 @@ import './ItemCard.css'
 const ItemCard = (props) => {
     console.log(props)
     return (
-        <div className='itemCardComponent'>
+        <div className='itemCardComponent' onClick = {props.openItemDescription}>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet"></link>
             <div className='picutreWithPriceAndHeart'>

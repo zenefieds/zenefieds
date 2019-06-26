@@ -9,6 +9,10 @@
     border-radius: 2px;
 }
 
+.itemCardComponent:hover {
+    cursor: pointer;
+}
+
 
 .priceChip {
     background-color: #363636;
