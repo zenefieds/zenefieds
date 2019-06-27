@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './AddItem.css';
+import closeButtonImage from './close-button.png';
 
 class AddItem extends Component {
   constructor(props) {
@@ -79,18 +80,24 @@ class AddItem extends Component {
     e.preventDefault();
   }
 
+
   render() {
     return (
-      <div className="AddItem">
+      <div className='Add-Item-Background'>
+        <div className='Add-Item-Container'>
+          <div className = 'Add-Item-Close-Button' onClick = {this.props.closeAddItem}>
+              <img className = 'Add-Item-Close-Button-Image' src = {closeButtonImage} />
+          </div>
           <form onSubmit ={e => this.submitNewItem(e)}>
-              <div><p>title: </p><input type='text' value = {this.state.title} onChange = {this.titleChange}></input></div>
-              <div><p>description: </p><input type='text' value = {this.state.description} onChange = {this.descriptionChange}></input></div>
-              <div><p>photos: </p><input type='text' value = {this.state.photoURL} onChange = {this.photosChange}></input><button onClick = {this.addPhoto}>Add Another Photo</button></div>
-              <div><p>price: </p><input type='number' value = {this.state.price} onChange = {this.priceChange}></input></div>
-              <div><p>area: </p><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div>
-              <div><p>category: </p><input type='text' value = {this.state.category} onChange = {this.categoryChange}></input></div>
-              <div><input type = 'submit' value = 'Submit'/></div>
+            <div className="row"><div className="col-25"><label>title: </label></div><div className="col-75"><input type='text' value = {this.state.title} onChange = {this.titleChange}></input></div></div>
+            <div className="row"><div className="col-25"><label>description: </label></div><div className="col-75"><input type='textarea' value = {this.state.description} onChange = {this.descriptionChange}></input></div></div>
+            <div className="row"><div className="col-25"><label>photos: </label></div><div className="col-75"><input type='upload' value = {this.state.photoURL} onChange = {this.photosChange}></input><button onClick = {this.addPhoto}>Add Another Photo</button></div></div>
+            <div className="row"><div className="col-25"><label>price: </label></div><div className="col-75"><input type='text' value = {this.state.price} onChange = {this.priceChange}></input></div></div>
+            <div className="row"><div className="col-25"><label>area: </label></div><div className="col-75"><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div></div>
+            <div className="row"><div className="col-25"><label>category: </label></div><div className="col-75"><input type='text' value = {this.state.category} onClick = {this.categoryChange}></input></div></div>
+            <div className="row"><input type = 'submit' value = 'Post'/></div>
           </form>
+        </div>
       </div>
     );
   }
