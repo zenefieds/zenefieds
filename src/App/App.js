@@ -22,11 +22,8 @@ class App extends Component {
     this.addNewItem = this.addNewItem.bind(this);
     this.toggleSellItem = this.toggleSellItem.bind(this);
     this.closeItemDescription = this.closeItemDescription.bind(this);
-<<<<<<< HEAD
     this.closeAddItem = this.closeAddItem.bind(this);
-=======
     this.openItemDescription = this.openItemDescription.bind(this);
->>>>>>> master
   }
   goToBrowse() {
     this.setState({
