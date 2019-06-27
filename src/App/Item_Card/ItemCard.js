@@ -6,9 +6,18 @@ class ItemCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLikeds: true,
+            isLiked: true,
         }
+        this.toggleLiked = this.toggleLiked.bind(this);
     }
+
+    toggleLiked(event) {
+        event.preventDefault();
+        this.setState({
+            isLiked: !this.state.isLiked
+        })
+    }
+
     render() {
         return (
             <div className='itemCardComponent'>
@@ -19,7 +28,7 @@ class ItemCard extends Component {
                     <div className='priceChip'>
                         ${this.props.item.price}
                     </div>
-                    <span className="heart-icon">
+                    <span className="heart-icon" onClick={this.toggleLiked}>
                         { this.state.isLiked ? <i class="material-icons">favorite</i> : <j class="material-icons">favorite</j>}
                     </span>
                 </div>
