@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ItemCard from '../Item_Card/ItemCard.js';
+import Browse from '../Browse/Browse.js';
 import './MyActivity.css';
 
 class MyActivity extends Component {
@@ -11,9 +12,14 @@ class MyActivity extends Component {
   render() {
     return (
       <div className="MyActivity">
-        {this.props.items.map((item, i) => {
-            return <ItemCard key = {i} item = {item}/>
-        })}
+        <h1>Draft Listings</h1>
+        <Browse items = {this.props.items.filter(item => item.status === 'draft')} openItemDescription = {this.props.openItemDescription} currentPage = {this.props.currentPage}/>
+        <hr className = 'Horizontal-Line'/>
+        <h1>Active Listings</h1>
+        <Browse items = {this.props.items.filter(item => item.status === 'active')} openItemDescription = {this.props.openItemDescription} currentPage = {this.props.currentPage}/>
+        <hr className = 'Horizontal-Line'/>
+        <h1>Inactive Listings</h1>
+        <Browse items = {this.props.items.filter(item => item.status === 'inactive')} openItemDescription = {this.props.openItemDescription} currentPage = {this.props.currentPage}/>
       </div>
     );
   }

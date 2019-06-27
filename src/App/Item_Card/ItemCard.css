@@ -1,0 +1,104 @@
+.itemCardComponent {
+    margin: 16px;
+    width: 270px;
+    height: 408px;
+    left: 136px;
+    top: 321px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.itemCardComponent:hover {
+    cursor: pointer;
+}
+
+
+.priceChip {
+    background-color: #363636;
+    font-family: Circular Std;
+    font-size: 14px;
+    line-height: 16px;
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    left: calc(3%);
+    top: calc(2.8%);
+    color: #F3F3F3;
+    align-items: center;
+    text-align: center;
+    border-radius: 2px;
+    padding-left: 11px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.picutreWithPriceAndHeart {
+    position: relative;
+    background-color: none;
+}
+
+.heart-icon {
+    display: block;
+    position: absolute;
+    left: calc(83%);
+    top: calc(92%);
+    text-align: center;
+}
+
+.heart-icon i {    
+    padding: 10px;
+    color: #FF5B5D;
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 0px 6px #E2EAF0;
+    font-size: 18px;
+}
+
+.heart-icon j {    
+    padding: 10px;
+    color: #E2EAF0;
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 0px 6px #E2EAF0;
+    font-size: 18px;
+}
+
+.categoryText {
+    padding-top: 25px;
+    padding-left: 10px;
+    font-family: Maven Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #636B71;
+}
+
+.titleText {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Maven Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #313131;
+}
+
+.ownerDateText {
+    padding-left: 10px;
+    padding-top: 15px;    
+    font-family: Maven Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #636B71;
+}
+
+.Item-Card-Image{
+    height: 250px;
+    width: 270px;
+}
