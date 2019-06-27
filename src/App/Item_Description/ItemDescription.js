@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../image.png';
+import image from './nerf image.png';
 import './ItemDescription.css';
 import emailImage from './email.png';
 import payPalImage from './PayPal.png';
