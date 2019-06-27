@@ -88,8 +88,8 @@
 }
 
 .ownerDateText {
-    padding-left: 10px;
-    padding-top: 15px;    
+    /* padding-left: 10px;
+    padding-top: 15px;     */
     font-family: Maven Pro;
     font-style: normal;
     font-weight: normal;
@@ -101,4 +101,22 @@
 .Item-Card-Image{
     height: 250px;
     width: 270px;
+}
+
+.textAndEdit {
+    padding-left: 10px;
+    padding-top: 15px;  
+    display: flex;
+    justify-content: space-between;
+}
+
+.pencilEdit i{
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 1px;
+    padding: 3px;
+    margin-right: 14px;
 }
