@@ -20,7 +20,7 @@ class ItemCard extends Component {
 
     render() {
         return (
-            <div className='itemCardComponent'>
+            <div className='itemCardComponent' onClick = {this.props.openItemDescription}>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 <div className='picutreWithPriceAndHeart'>
                     <img className = 'Item-Card-Image' src={this.props.item.photo || ItemImage}/>
@@ -28,7 +28,7 @@ class ItemCard extends Component {
                         ${this.props.item.price}
                     </div>
                     { this.props.currentPage !== 'MyActivity' ? 
-                    <span className="heart-icon" onClick={this.toggleLiked}>
+                    <span className="heart-icon" onClick={(e) => {e.stopPropagation(); this.toggleLiked(e)}}>
                         { this.state.isLiked ? <i class="material-icons">favorite</i> : <j class="material-icons">favorite</j>}
                     </span>
                     : <div></div> }
