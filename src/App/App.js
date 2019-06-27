@@ -67,8 +67,8 @@ class App extends Component {
         <Header goToBrowse = {this.goToBrowse} goToMyActivity = {this.goToMyActivity} currentPage = {this.state.page}/>
         <button onClick = {this.toggleSellItem}>Sell Something</button>
         {this.state.addingItem ? <AddItem addNewItem = {this.addNewItem}/> : null}
-        {this.state.page === 'Browse' ? <Browse items = {this.state.items} openItemDescription = {this.openItemDescription}/> : null}
-        {this.state.page === 'MyActivity' ? <MyActivity items = {this.state.items.filter(item => item.owner === this.state.user)} openItemDescription = {this.openItemDescription}/> : null}
+        {this.state.page === 'Browse' ? <Browse items = {this.state.items.filter(item => item.status === 'active')} openItemDescription = {this.openItemDescription} currentPage = {this.state.page}/> : null}
+        {this.state.page === 'MyActivity' ? <MyActivity items = {this.state.items.filter(item => item.owner === this.state.user)} openItemDescription = {this.openItemDescription} currentPage = {this.state.page}/> : null}
         {this.state.viewingItem ? <ItemDescription item = {this.state.items[0]} closeItemDescription = {this.closeItemDescription}/> : null}
       </div>
     );
