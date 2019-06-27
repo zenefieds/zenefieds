@@ -25,6 +25,19 @@ const data = [
         date: '2 days ago'
     },
     {
+        title: 'Servicable Nerf Gun',
+        description: 'You might be able to get by during office nerf wars',
+        condition: 'great',
+        price: 30,
+        city: 'Tempe',
+        state: 'AZ',
+        category: 'Non Lethal Weaponry',
+        photo: 'https://i.imgur.com/4pLK6Jo.png',
+        status: 'active',
+        owner: 'Abhishek',
+        date: '2 days ago'
+    },
+    {
         title: 'Kitchen Table',
         description: '36 inch x 48 inch kitchen table',
         condition: 'new',
