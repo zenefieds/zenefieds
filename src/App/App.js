@@ -85,7 +85,7 @@ class App extends Component {
         {this.state.addingItem ? <AddItem addNewItem = {this.addNewItem} closeAddItem = {this.closeAddItem}/> : null}
         {this.state.page === 'Browse' ? <Browse items = {this.state.items.filter(item => item.status === 'active')} openItemDescription = {this.openItemDescription} currentPage = {this.state.page}/> : null}
         {this.state.page === 'MyActivity' ? <MyActivity items = {this.state.items.filter(item => item.owner === this.state.user)} openItemDescription = {this.openItemDescription} currentPage = {this.state.page}/> : null}
-        {this.state.viewingItem ? <ItemDescription item = {this.state.items[0]} closeItemDescription = {this.closeItemDescription}/> : null}
+        {this.state.viewingItem ? <ItemDescription item = {this.state.items[2]} closeItemDescription = {this.closeItemDescription}/> : null}
       </div>
     );
   }

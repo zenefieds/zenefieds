@@ -25,7 +25,7 @@ const ItemDescription = (props) => {
                                 <div className = 'Item-Description-Q-and-A-Spacer'>
                                     <p>Question:</p>
                                 </div>
-                                <p>Do the hands glow in the dark?</p>
+                                <p>Will I be able to completely dominate my opponent with this gun?</p>
                             </div>
                             <div className = 'Item-Description-Q-and-A-Single-Question'>
                             <div className = 'Item-Description-Q-and-A-Spacer'>
@@ -37,13 +37,13 @@ const ItemDescription = (props) => {
                             <div className = 'Item-Description-Q-and-A-Spacer'>
                                     <p>Question:</p>
                                 </div>
-                                <p>What is the size of the watch face?</p>
+                                <p>What is the magazine capacity?</p>
                             </div>
                             <div className = 'Item-Description-Q-and-A-Single-Question'>
                             <div className = 'Item-Description-Q-and-A-Spacer'>
                                     <p>Answer:</p>
                                 </div>
-                                <p>The dial diameter of the watch is 41mm</p>
+                                <p>7 rounds can fit in the magazine.</p>
                             </div>
                         </div>
                     </div>
