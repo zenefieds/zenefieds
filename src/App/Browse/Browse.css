@@ -2,6 +2,5 @@
     padding-left: 120px;
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    height: auto;
+    max-width: 1225px;
 }
