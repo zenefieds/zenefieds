@@ -12,8 +12,7 @@ class ItemCard extends Component {
     render() {
         return (
             <div className='itemCardComponent'>
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 <div className='picutreWithPriceAndHeart'>
                     <img src={ItemImage}/>
                     <div className='priceChip'>
