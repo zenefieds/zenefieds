@@ -12,7 +12,9 @@ class Header extends Component {
     render() {
         return (
           <div>
-            <img className = 'HeaderImage' src = {headerImage}></img>
+            <div className = 'HeaderImageContainer'>
+              <img className = 'HeaderImage' src = {headerImage}></img>
+            </div>
             <ReturnNav goToBrowse = {this.props.goToBrowse} goToMyActivity = {this.props.goToMyActivity} currentPage = {this.props.currentPage}/>
           </div>
         );

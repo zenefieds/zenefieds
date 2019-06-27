@@ -22,11 +22,8 @@ class App extends Component {
     this.addNewItem = this.addNewItem.bind(this);
     this.toggleSellItem = this.toggleSellItem.bind(this);
     this.closeItemDescription = this.closeItemDescription.bind(this);
-<<<<<<< HEAD
     this.closeAddItem = this.closeAddItem.bind(this);
-=======
     this.openItemDescription = this.openItemDescription.bind(this);
->>>>>>> master
   }
   goToBrowse() {
     this.setState({
@@ -75,7 +72,16 @@ class App extends Component {
     return (
       <div className="App">
         <Header goToBrowse = {this.goToBrowse} goToMyActivity = {this.goToMyActivity} currentPage = {this.state.page}/>
-        <button onClick = {this.toggleSellItem}>Sell Something</button>
+        <div className = 'App-Search-Bar-Container'>
+          {this.state.page === 'Browse' ? <div className = 'App-Search-Div'>
+            <i className = 'App-Search-Icon' class="zmdi zmdi-search"></i>
+            <p>Search</p>
+          </div> : null }
+          <div className = 'App-Sell-Div' onClick = {this.toggleSellItem}>
+            <p>Sell Something</p>
+          </div>
+        </div>
+        {this.state.addingItem ? <AddItem addNewItem = {this.addNewItem}/> : null}
         {this.state.addingItem ? <AddItem addNewItem = {this.addNewItem} closeAddItem = {this.closeAddItem}/> : null}
         {this.state.page === 'Browse' ? <Browse items = {this.state.items.filter(item => item.status === 'active')} openItemDescription = {this.openItemDescription} currentPage = {this.state.page}/> : null}
         {this.state.page === 'MyActivity' ? <MyActivity items = {this.state.items.filter(item => item.owner === this.state.user)} openItemDescription = {this.openItemDescription} currentPage = {this.state.page}/> : null}

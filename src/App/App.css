@@ -1,3 +1,49 @@
 .App {
-  background: #FFFFFF;
+  background: #F2F2F2;
+  width: 100%;
+}
+
+.App-Search-Bar-Container {
+  display: flex;
+  width: 90%;
+  max-width: 1175px
+}
+
+.App-Sell-Div {
+  margin: 40px 0 0 auto;
+  height: 32px;
+  width: 119px;
+  background: #F25341;
+}
+
+.App-Sell-Div:hover {
+  cursor: pointer;
+}
+
+.App-Sell-Div > p {
+  margin-left: 19px;
+  line-height: 7px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.App-Search-Div {
+  display: flex;
+  border: 1px solid #DDDDDD;
+  background: white;
+  width: 450px;
+  height: 40px;
+  margin: 30px 0 0 136px;
+}
+
+.App-Search-Div > p{
+  color: grey;
+  line-height: 8px
+}
+
+.zmdi-search {
+  margin: 10px 10px 0 15px;
+  color: grey;
+  font-size: 20px;
 }
