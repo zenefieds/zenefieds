@@ -9,9 +9,9 @@ const ItemCard = (props) => {
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet"></link>
             <div className='picutreWithPriceAndHeart'>
-                <img src={ItemImage}/>
+                <img className = 'Item-Card-Image' src={props.item.photo || ItemImage}/>
                 <div className='priceChip'>
-                    $80
+                    ${props.item.price}
                 </div>
                 <span className="heart-icon">
                     <i class="material-icons">favorite</i>
