@@ -3,3 +3,8 @@
     width: 1200px;
     margin: 0 auto;
 }
+
+.HeaderImageContainer {
+    width: 100%;
+    background-color: white;
+}

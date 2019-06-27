@@ -15,14 +15,14 @@
 
 .BrowseButton {
     margin: 16px 0 16px 134px;
-    font-family: Circular Std;
+    font-family: 'Maven Pro', sans-serif;
     font-size: 14px;
     line-height: 16px;
 }
 
 .ActivityButton {
     margin: 16px 0 16px 36px;
-    font-family: Circular Std;
+    font-family: 'Maven Pro', sans-serif;
     font-size: 14px;
     line-height: 16px;
 }
