@@ -52,6 +52,15 @@
     font-size: 18px;
 }
 
+.heart-icon j {    
+    padding: 10px;
+    color: #E2EAF0;
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 0px 6px #E2EAF0;
+    font-size: 18px;
+}
+
 .categoryText {
     padding-top: 25px;
     padding-left: 10px;
