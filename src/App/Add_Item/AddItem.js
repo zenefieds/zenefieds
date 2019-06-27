@@ -95,7 +95,7 @@ class AddItem extends Component {
             <div className="row"><div className="col-25"><label>price: </label></div><div className="col-75"><input type='text' value = {this.state.price} onChange = {this.priceChange}></input></div></div>
             <div className="row"><div className="col-25"><label>area: </label></div><div className="col-75"><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div></div>
             <div className="row"><div className="col-25"><label>category: </label></div><div className="col-75"><input type='text' value = {this.state.category} onClick = {this.categoryChange}></input></div></div>
-            <div className="row"><input type = 'submit' value = 'Post'/></div>
+            <div className="row"><div className="col-25"><p className="link">save for later </p></div><div className="col-75"><input type = 'submit' value = 'Post'/></div></div>
           </form>
         </div>
       </div>
