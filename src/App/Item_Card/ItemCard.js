@@ -14,7 +14,7 @@ class ItemCard extends Component {
             <div className='itemCardComponent'>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 <div className='picutreWithPriceAndHeart'>
-                    <img src={ItemImage}/>
+                    <img className = 'Item-Card-Image' src={this.props.item.photo || ItemImage}/>
                     <div className='priceChip'>
                         ${this.props.item.price}
                     </div>

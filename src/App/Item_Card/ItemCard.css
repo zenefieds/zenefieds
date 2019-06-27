@@ -97,3 +97,8 @@
     line-height: 23px;
     color: #636B71;
 }
+
+.Item-Card-Image{
+    height: 250px;
+    width: 270px;
+}
