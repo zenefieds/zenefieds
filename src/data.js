@@ -12,7 +12,7 @@ const data = [
         date: '3 days ago'
     },
     {
-        title: 'Overkill Nerf Gun Weaponry',
+        title: 'Overkill Nerf Guns with Ammo',
         description: 'Make your colleagues regret working within a 70 foot radius of you with these obnoxiously large nerf guns',
         condition: 'great',
         price: 2000,
