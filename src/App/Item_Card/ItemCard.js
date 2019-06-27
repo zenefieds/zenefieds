@@ -7,6 +7,7 @@ class ItemCard extends Component {
         super(props);
         this.state = {
             isLiked: false,
+
         }
         this.toggleLiked = this.toggleLiked.bind(this);
     }
