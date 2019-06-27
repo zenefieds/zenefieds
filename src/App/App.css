@@ -1,3 +1,31 @@
 .App {
-  background: #FFFFFF;
+  background: #F2F2F2;
+}
+
+.App-Search-Bar-Container {
+  display: flex;
+}
+
+.App-Sell-Div {
+  margin-left: auto;
+}
+
+.App-Search-Div {
+  display: flex;
+  border: 1px solid #DDDDDD;
+  background: white;
+  width: 450px;
+  height: 40px;
+  margin: 30px 0 0 136px;
+}
+
+.App-Search-Div > p{
+  color: grey;
+  line-height: 8px
+}
+
+.zmdi-search {
+  margin: 10px 10px 0 15px;
+  color: grey;
+  font-size: 20px;
 }

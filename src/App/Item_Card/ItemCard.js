@@ -6,7 +6,7 @@ class ItemCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLikeds: true,
+            isLiked: true,
         }
     }
     render() {
