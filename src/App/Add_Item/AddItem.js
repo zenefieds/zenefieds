@@ -109,7 +109,7 @@ class AddItem extends Component {
               <p className = 'disclaimer-text'>By posting, you confirm that this listing complies with your company's policies and all appplicable laws.</p>
               <p className = 'disclaimer-text-link'>Learn more</p>
             </div>
-            <div className="row"><input type = 'submit' value = 'Post'/></div>
+            <div className="row"><div className="col-25"><p className="link">save for later </p></div><div className="col-75"><input type = 'submit' value = 'Post'/></div></div>
           </form>
         </div>
       </div>
