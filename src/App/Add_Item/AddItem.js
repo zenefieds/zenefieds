@@ -11,6 +11,7 @@ class AddItem extends Component {
         photoURL: '',
         photos: [],
         price: 0,
+        condition: '',
         area: '',
         category: '',
         owner: 'Kevin',
@@ -20,6 +21,7 @@ class AddItem extends Component {
     this.photosChange = this.photosChange.bind(this);
     this.addPhoto = this.addPhoto.bind(this);
     this.priceChange = this.priceChange.bind(this);
+    this.conditionChange = this.conditionChange.bind(this);
     this.areaChange = this.areaChange.bind(this);
     this.categoryChange = this.categoryChange.bind(this);
     this.submitNewItem = this.submitNewItem.bind(this);
@@ -45,6 +47,9 @@ class AddItem extends Component {
   }
   priceChange(e) {
     this.setState({price: e.target.value})
+  }
+  conditionChange(e) {
+    this.setState({condition: e.target.value})
   }
   areaChange(e) {
     this.setState({area: e.target.value})
@@ -85,17 +90,29 @@ class AddItem extends Component {
     return (
       <div className='Add-Item-Background'>
         <div className='Add-Item-Container'>
-          <div className = 'Add-Item-Close-Button' onClick = {this.props.closeAddItem}>
-              <img className = 'Add-Item-Close-Button-Image' src = {closeButtonImage} />
+          <div className='addItemHeader'>
+            <div>Creat a new listing</div>
+            <div className = 'Add-Item-Close-Button' onClick = {this.props.closeAddItem}>
+                <img className = 'Add-Item-Close-Button-Image' src = {closeButtonImage} />
+            </div>
           </div>
+          <div className='border'></div>
           <form onSubmit ={e => this.submitNewItem(e)}>
-            <div className="row"><div className="col-25"><label>title: </label></div><div className="col-75"><input type='text' value = {this.state.title} onChange = {this.titleChange}></input></div></div>
-            <div className="row"><div className="col-25"><label>description: </label></div><div className="col-75"><input type='textarea' value = {this.state.description} onChange = {this.descriptionChange}></input></div></div>
-            <div className="row"><div className="col-25"><label>photos: </label></div><div className="col-75"><input type='upload' value = {this.state.photoURL} onChange = {this.photosChange}></input><button onClick = {this.addPhoto}>Add Another Photo</button></div></div>
-            <div className="row"><div className="col-25"><label>price: </label></div><div className="col-75"><input type='text' value = {this.state.price} onChange = {this.priceChange}></input></div></div>
-            <div className="row"><div className="col-25"><label>area: </label></div><div className="col-75"><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div></div>
-            <div className="row"><div className="col-25"><label>category: </label></div><div className="col-75"><input type='text' value = {this.state.category} onClick = {this.categoryChange}></input></div></div>
-            <div className="row"><div className="col-25"><p className="link">save for later </p></div><div className="col-75"><input type = 'submit' value = 'Post'/></div></div>
+            <div className="row"><div className="col-25"><label>Title: </label></div><div className="col-75"><input type='text' placeholder= 'Use words people would search for when looking for your item' value = {this.state.title} onChange = {this.titleChange}></input></div></div>
+            <div className="subscriptLimit">50</div>
+            <div className="row"><div className="col-25"><label>Description: </label></div><div className="col-75"><input type='textarea' value = {this.state.description} onChange = {this.descriptionChange}></input></div></div>
+            <div className="subscriptLimit">500</div>
+            <div className="row"><div className="col-25"><label>Photos: </label></div><div className="Photo-Box-Div"><i class="zmdi zmdi-cloud-upload"></i> <p className = 'Adding-Photos-Text'>+5 Photos</p></div></div>
+            <div className="row"><div className="col-25"><label>Condition: </label></div><div className="col-75"><input type='text' value = {this.state.condition} onChange = {this.conditionChange}></input></div></div>
+            <div className="row"><div className="col-25"><label>Price: </label></div><div className="col-75"><input type='text' value = {this.state.price} onChange = {this.priceChange}></input></div></div>
+            <div className="row"><div className="col-25"><label>Area: </label></div><div className="col-75"><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div></div>
+            <div className="row"><div className="col-25"><label>Category: </label></div><div className="col-75"><input type='text' value = {this.state.category} onChange = {this.categoryChange}/></div></div>
+            <div className = 'row'>
+              <p className = 'disclaimer-text'>By posting, you confirm that this listing complies with your company's policies and all appplicable laws.</p>
+              <p className = 'disclaimer-text-link'>Learn more</p>
+            </div>
+            <div className='border'></div>
+            <div className="row"><div className="col-25"><p className="link">Save for later </p></div><div className="col-75"><input type = 'submit' value = 'Post'/></div></div>
           </form>
         </div>
       </div>
