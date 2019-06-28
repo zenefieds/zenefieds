@@ -30,8 +30,8 @@
     background-color: #fefefe;
     margin: auto;
     border: 1px solid #888;
-    width: 55%;
-    height: 75%;
+    width: 650px;
+    height: 710px;
 }
 
 .Add-Item-Close-Button {
@@ -70,13 +70,24 @@
 }
 
 .zmdi-cloud-upload {
+    margin-top: 24px;
+    margin-left: 32px;
     color: grey;
+}
+
+.Adding-Photos-Text {
+    color: grey;
+    font-size: 11px;
+    line-height: 1px;
+    margin-left: 12px;
 }
 
 .row {
     display: flex;
     padding-left: 25px;
     padding-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .row:after {
@@ -86,7 +97,7 @@
 }
 
 input[type=text] {
-    width: 85%;
+    width: 100%;
     padding: 12px;
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
@@ -94,7 +105,7 @@ input[type=text] {
 }
   
 input[type=textarea] {
-    width: 85%;
+    width: 100%;
     padding: 12px;
     border: 1px solid #DDDDDD;
     border-radius: 1px;
@@ -132,6 +143,15 @@ input[type=submit] {
   
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+.subscriptLimit {
+    font-family: Circular Std;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 11px;
+    line-height: 20px;
+    color: #999999;
 }
 
 .disclaimer-text {

@@ -99,8 +99,10 @@ class AddItem extends Component {
           <div className='border'></div>
           <form onSubmit ={e => this.submitNewItem(e)}>
             <div className="row"><div className="col-25"><label>Title: </label></div><div className="col-75"><input type='text' placeholder= 'Use words people would search for when looking for your item' value = {this.state.title} onChange = {this.titleChange}></input></div></div>
+            <div className="subscriptLimit">50</div>
             <div className="row"><div className="col-25"><label>Description: </label></div><div className="col-75"><input type='textarea' value = {this.state.description} onChange = {this.descriptionChange}></input></div></div>
-            <div className="row"><div className="col-25"><label>Photos: </label></div><div className="Photo-Box-Div"><i class="zmdi zmdi-cloud-upload"></i></div></div>
+            <div className="subscriptLimit">500</div>
+            <div className="row"><div className="col-25"><label>Photos: </label></div><div className="Photo-Box-Div"><i class="zmdi zmdi-cloud-upload"></i> <p className = 'Adding-Photos-Text'>+5 Photos</p></div></div>
             <div className="row"><div className="col-25"><label>Condition: </label></div><div className="col-75"><input type='text' value = {this.state.condition} onChange = {this.conditionChange}></input></div></div>
             <div className="row"><div className="col-25"><label>Price: </label></div><div className="col-75"><input type='text' value = {this.state.price} onChange = {this.priceChange}></input></div></div>
             <div className="row"><div className="col-25"><label>Area: </label></div><div className="col-75"><input type='text' value = {this.state.area} onChange = {this.areaChange}></input></div></div>
@@ -109,7 +111,8 @@ class AddItem extends Component {
               <p className = 'disclaimer-text'>By posting, you confirm that this listing complies with your company's policies and all appplicable laws.</p>
               <p className = 'disclaimer-text-link'>Learn more</p>
             </div>
-            <div className="row"><div className="col-25"><p className="link">save for later </p></div><div className="col-75"><input type = 'submit' value = 'Post'/></div></div>
+            <div className='border'></div>
+            <div className="row"><div className="col-25"><p className="link">Save for later </p></div><div className="col-75"><input type = 'submit' value = 'Post'/></div></div>
           </form>
         </div>
       </div>
